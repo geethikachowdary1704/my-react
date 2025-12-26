@@ -1,8 +1,6 @@
-import React from "react";
-
-const Sidebar = () => {
+function Sidebar() {
   return (
-    <div className="h-screen w-64 bg-gray-800 text-white fixed">
+    <div className="h-screen w-64 bg-gray-800 text-white">
       <h2 className="text-xl font-bold p-4 border-b border-gray-700">
         My Dashboard
       </h2>
@@ -15,6 +13,6 @@ const Sidebar = () => {
       </ul>
     </div>
   );
-};
+}
 
 export default Sidebar;

@@ -1,29 +1,27 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
+import Sidebar from "./sidebar";
+import Navbar from "./navbar";
 
 const Dashboard = () => {
   return (
-    <div className="flex">
+    <div className="flex min-h-screen w-full min-w-screen">
       <Sidebar />
-
-      <div className="flex-1 ml-64">
+      <div className="grow w-full">
         <Navbar />
-
-        <div>
+        <div className="grow flex flex-col p-6">
           <h1 className="text-2xl font-bold mb-4">
             Welcome to Dashboard
           </h1>
 
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-white p-4 shadow rounded">
-              Users: 120
+              Name
             </div>
             <div className="bg-white p-4 shadow rounded">
-              Sales: ₹45,000
+              Designation
             </div>
             <div className="bg-white p-4 shadow rounded">
-              Tasks: 18
+              Salary
             </div>
           </div>
         </div>
